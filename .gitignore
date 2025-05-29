@@ -1,0 +1,69 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+yarn.lock
+package-lock.json # If you are using npm and want to ignore it (though often committed)
+client/package-lock.json # Same for client
+server/package-lock.json # Same for server
+pnpm-lock.yaml # If using pnpm
+
+# Build Output / Production
+build/
+client/build/
+client/dist/ # For Vite build output
+server/dist/ # If your server had a build step (e.g., TypeScript)
+
+# Environment Variables - CRITICAL
+# These files contain sensitive information like API keys, database credentials, JWT secrets.
+# NEVER commit .env files.
+.env
+.env.*
+*.env
+client/.env
+client/.env.*
+client/*.env
+server/.env
+server/.env.*
+server/*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDE / Editor specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Testing
+coverage/
+.nyc_output/
+
+# Miscellaneous
+.pnp/
+.pnp.js
+.yarn/
