@@ -5,9 +5,6 @@ node_modules/
 client/node_modules/
 server/node_modules/
 yarn.lock
-package-lock.json # If you are using npm and want to ignore it (though often committed)
-client/package-lock.json # Same for client
-server/package-lock.json # Same for server
 pnpm-lock.yaml # If using pnpm
 
 # Build Output / Production

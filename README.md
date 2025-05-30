@@ -2,6 +2,12 @@
 
 A full-stack MERN (MongoDB, Express.js, React, Node.js) application that provides a Kanban-style board for users to manage their tasks across different stages (To Do, In Progress, Done). Features include user authentication, task creation, drag-and-drop task management, user-specific tasks, task editing, date tracking, color-coding, and search functionality.
 
+---
+Developed by: Akashdeep Sengupta
+(akashdeepsengupta42@gmail.com | https://www.linkedin.com/in/akashdeep-sengupta-044548281/)
+---
+
+
 ## Features
 
 *   **User Authentication:**
@@ -83,13 +89,18 @@ cd Kanban-Task-Manager-Web-App
       npm install
       ```
       *(Or `yarn install` if you prefer yarn)*
-   *   **Create Environment Variables File:**
-      Create a `.env` file in the `/server` directory (`server/.env`) and add the following environment variables:
-      ```
-      PORT=5000
-      MONGO_URI=your_mongodb_connection_string_here
-      JWT_SECRET=your_super_strong_and_random_jwt_secret
-      ```
+      *   **Create Environment Variables File:**
+        In the `/server` directory, copy the `server/.env.example` file to a new file named `server/.env`:
+        ```
+        cp server/.env.example server/.env 
+        ```
+        Then, open `server/.env` and replace the placeholder values with your actual configuration:
+        ```
+        PORT=5000
+        MONGO_URI=your_mongodb_connection_string_here
+        JWT_SECRET=your_super_strong_and_random_jwt_secret
+        ```
+
       *   **`PORT`**: The port on which the backend server will run (e.g., 5000).
       *   **`MONGO_URI`**: Your MongoDB connection string.
           *   **For MongoDB Atlas:** It will look like `mongodb+srv://<username>:<password>@<cluster-url>/<databaseName>?retryWrites=true&w=majority`. Replace `<username>`, `<password>`, `<cluster-url>`, and `<databaseName>` (e.g., `kanbanAppDB`) with your actual credentials.
