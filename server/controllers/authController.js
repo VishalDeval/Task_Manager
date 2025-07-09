@@ -22,7 +22,7 @@ const generateToken = (userId, username) => {
 // @access  Public
 const registerUser = async (req, res) => {
   const { username, password } = req.body;
-
+  console.log("📦 req.body:", req.body); // <- ADD THIS LINEr
   if (!username || !password) {
     return res.status(400).json({ message: 'Please provide username and password' });
   }

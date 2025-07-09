@@ -15,6 +15,7 @@ connectDB();
 
 // Middleware
 app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // --- API Routes ---
@@ -28,12 +29,13 @@ app.use('/api/tasks', taskRoutes); // Routes for task management (protected)
 
 // Basic Route
 app.get('/', (req, res) => {
-  res.send('Kanban API Server is running...');
+  res.send('Task Manager API Server is running...');
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5050;
 
 app.listen(PORT, () => {
+  console.log(PORT)
   console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
 });
 

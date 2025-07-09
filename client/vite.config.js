@@ -10,7 +10,7 @@ export default defineConfig({
       // '/api': 'http://localhost:5000' 
       // Or, with options:
       '/api': {
-        target: 'http://localhost:5000', // Your backend server address
+        target: 'http://localhost:5050', // Your backend server address
         changeOrigin: true, // Recommended for most cases, changes the 'Origin' header to the target URL
         // secure: false, // Set to false if your backend is HTTP (not HTTPS) - typically for local dev
         // rewrite: (path) => path.replace(/^\/api/, '') // Optional: if your backend API routes DON'T start with /api

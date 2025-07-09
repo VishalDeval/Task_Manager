@@ -17,7 +17,7 @@ const BoardPage = ({ searchTerm }) => {
 
   return (
     <div style={pageStyle}>
-      <h1 style={headerStyle}>My Kanban Board</h1>
+      <h1 style={headerStyle}>My Task Board</h1>
       <Board searchTerm={searchTerm} />
     </div>
   );

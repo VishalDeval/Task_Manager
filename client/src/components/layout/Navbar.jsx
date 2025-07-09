@@ -78,7 +78,7 @@ const Navbar = ({ searchTerm, onSearchChange }) => {
 
   return (
     <nav style={navStyle}>
-      <Link to="/" style={linkStyle}>KanbanFlow</Link>
+      <Link to="/" style={linkStyle}>Task Manager</Link>
       
       {isAuthenticated && (
         <div style={searchContainerStyle}>
